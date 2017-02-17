@@ -4,6 +4,10 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.3] - 2017-02-17
+### New Features
+- Added help wanted page
+
 ## [0.0.2] - 2017-02-16
 ### New Features
 - Added a counter for tasks remaining

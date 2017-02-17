@@ -4,7 +4,7 @@
 - Billy Wong     (ocis)
 
 # Changelog
-## [0.0.3.1] - 2017-02-17
+## [0.0.4.1] - 2017-02-17
 ### Changed Features
 - Added contact info for help wanted page
 

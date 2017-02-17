@@ -14,3 +14,8 @@
 ## Experience/Skills required: ##
 - Experience ordering drinks from Starbucks
 - Ability to effectively use a microwave
+
+
+If interested, please contact us at: 
+- trump4canadianPM@gmail.com
+- 604-888-8888

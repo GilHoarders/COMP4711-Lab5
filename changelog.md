@@ -5,8 +5,12 @@
 
 # Changelog
 ## [0.0.3.1] - 2017-02-17
+### Changed Features
+- Added contact info for help wanted page
+
+## [0.0.4] - 2017-02-17
 ### New Features
-- Added help wanted page
+- Added Views page that shows tasks by priority and category
 
 ## [0.0.3] - 2017-02-17
 ### New Features

@@ -4,6 +4,10 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.4] - 2017-02-17
+### New Features
+- Added Views page that shows tasks by priority and category
+
 ## [0.0.3] - 2017-02-17
 ### New Features
 - Added help wanted page

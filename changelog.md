@@ -4,6 +4,10 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.5] - 2017-03-02
+### New Features
+- Added Maintenance page that displays status of tasks
+
 ## [0.0.4] - 2017-02-17
 ### New Features
 - Added Views page that shows tasks by priority and category

@@ -1,10 +1,13 @@
 <?php
 
 class Mtce extends Application {
+
   private $items_per_page = 10;
 
   public function index()
   {
+    $role = $this->session->userdata('userrole');
+    $this->data['pagetitle'] = 'TODO List Maintenance ('. $role . ')';
     $this->page(1);
   }
 

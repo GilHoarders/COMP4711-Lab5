@@ -4,6 +4,10 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.8] - 2017-03-09
+## Changed Features
+- Switched session management to use a database
+
 ## [0.0.7] - 2017-03-02
 ### New Features
 - Added user modes
@@ -11,7 +15,7 @@
 ## [0.0.6] - 2017-03-02
 ### New Features
 - Added pagination to maintenance page
- 
+
 ## [0.0.5] - 2017-03-02
 ### New Features
 - Added Maintenance page that displays status of tasks

@@ -4,6 +4,10 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.13] - 2017-03-09
+### Changed Features
+- Added fields to edit all values of a task
+
 ## [0.0.12] - 2017-03-09
 ### New Features
 - Added adding new tasks and edit and delete task features

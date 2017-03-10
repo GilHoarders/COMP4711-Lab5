@@ -4,13 +4,17 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.10] - 2017-03-09
+### New Features
+- Added add job and edit job buttons on maintenance page if owner
+
 ## [0.0.9] - 2017-03-09
-## New Features
+### New Features
 - Added Caboose package
 - Added error message handling
 
 ## [0.0.8] - 2017-03-09
-## Changed Features
+### Changed Features
 - Switched session management to use a database
 
 ## [0.0.7] - 2017-03-02

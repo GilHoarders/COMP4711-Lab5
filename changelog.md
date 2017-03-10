@@ -4,6 +4,10 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.12] - 2017-03-09
+### New Features
+- Added adding new tasks and edit and delete task features
+
 ## [0.0.11] - 2017-03-09
 ### New Features
 - Added work completion button and checks to work page

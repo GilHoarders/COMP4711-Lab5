@@ -14,6 +14,8 @@ class Mtce extends Application {
   // Show a single page of todo items
   private function show_page($tasks)
   {
+      $role = $this->session->userdata('userrole');
+
       $this->data['pagetitle'] = 'TODO List Maintenance';
       // build the task presentation output
       $result = ''; // start with an empty array
@@ -21,7 +23,10 @@ class Mtce extends Application {
       {
           if (!empty($task->status))
               $task->status = $this->statuses->get($task->status)->name;
-          $result .= $this->parser->parse('oneitem', (array) $task, true);
+          if ($role == ROLE_OWNER)
+            $result .= $this->parser->parse('oneitemx', (array) $task, true);
+          else
+            $result .= $this->parser->parse('oneitem', (array) $task, true);
       }
       $this->data['display_tasks'] = $result;
 
@@ -44,7 +49,13 @@ class Mtce extends Application {
       }
       if($count >= $this->items_per_page) break;
     }
+
     $this->data['pagination'] = $this->pagenav($num);
+
+    $role = $this->session->userdata('userrole');
+    if ($role == ROLE_OWNER)
+      $this->data['pagination'] .=$this->parser->parse('itemadd', [], true);
+
     $this->show_page($tasks);
   }
 

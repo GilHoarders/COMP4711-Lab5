@@ -13,5 +13,5 @@
             <li><a href="/roles/actor/Guest">Guest</a></li>
             <li><a href="/roles/actor/Owner">Owner</a></li>
         </ul>
-    </li> 
+    </li>
 </ul>

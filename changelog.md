@@ -4,6 +4,11 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.9] - 2017-03-09
+## New Features
+- Added Caboose package
+- Added error message handling
+
 ## [0.0.8] - 2017-03-09
 ## Changed Features
 - Switched session management to use a database

@@ -13,6 +13,7 @@ class Views extends Application {
 
   function makeCategorizedPanel($tasks) {
     $parms = ['display_tasks' => $this->tasks->getCategorizedTasks()];
+
     return $this->parser->parse('by_category', $parms, true);
   }
 
@@ -30,8 +31,28 @@ class Views extends Application {
       $converted[] = (array) $task;
 
     $parms = ['display_tasks' => $converted];
-    return $this->parser->parse('by_priority',$parms,true);
+    // INSERT the next two lines
+    $role = $this->session->userdata('userrole');
+    $parms['completer'] = ($role == ROLE_OWNER) ? '/views/complete' : '#';
+    return $this->parser->parse('by_priority', $parms, true);
   }
+    // complete flagged items
+    function complete() {
+        $role = $this->session->userdata('userrole');
+        if ($role != ROLE_OWNER) redirect('/work');
+
+        // loop over the post fields, looking for flagged tasks
+        foreach($this->input->post() as $key=>$value) {
+            if (substr($key,0,4) == 'task') {
+                // find the associated task
+                $taskid = substr($key,4);
+                $task = $this->tasks->get($taskid);
+                $task->status = 2; // complete
+                $this->tasks->update($task);
+            }
+        }
+        $this->index();
+    }
 }
 
 function orderByPriority($a, $b) {
@@ -42,3 +63,4 @@ function orderByPriority($a, $b) {
   else
     return 0;
 }
+

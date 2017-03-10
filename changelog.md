@@ -4,6 +4,10 @@
 - Billy Wong     (ocis)
 
 # Changelog
+## [0.0.11] - 2017-03-09
+### New Features
+- Added work completion button and checks to work page
+
 ## [0.0.10] - 2017-03-09
 ### New Features
 - Added add job and edit job buttons on maintenance page if owner
